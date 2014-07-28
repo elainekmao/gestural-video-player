@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>A Gesture-Controlled Video Player</title>
+        <meta name="description" content="A gestural video player">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+
+        <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/canvas.text.js"></script>
+        <script type="text/javascript" src="js/dollar.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </head>
+
+    <body onload="onLoadEvent()">
+        <div class="container">
+            <div class="page-header">
+                <h1>GestureVid <small>A video player you control with your mouse movements!</small></h1>
+            </div>
+            <div align="center">
+                <video id="myvideo" src="http://media.w3.org/2010/05/bunny/movie.mp4">
+                Your user agent does not support the HTML5 Video element.
+                </video>
+                <canvas id="gesturevidcanvas" onmousedown="mouseDownEvent(event.clientX, event.clientY)" onmousemove="mouseMoveEvent(event.clientX, event.clientY)" onmouseup="mouseUpEvent(event.clientX, event.clientY)" oncontextmenu="return false;"></canvas>
+            </div>
+        </div>
+        <div id="messages" />
+            <div class="alert">
+              <button type="button" class="close" data-dismiss="alert">&times;</button>
+              <strong>Welcome!</strong> Please check out our <a href="help.html" target="_blank">Help</a> page if it's your first time here.
+            </div>
+        <div id="footer">
+            <p><small><a href="help.html" target="_blank">GestureVid Help</a></small></p>
+        </div>
+    </body>
+</html>

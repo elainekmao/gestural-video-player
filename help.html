@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>A Gesture-Controlled Video Player</title>
+        <meta name="description" content="A gestural video player">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+
+        <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/canvas.text.js"></script>
+        <script type="text/javascript" src="js/dollar.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="page-header">
+                <h1>GestureVid <small>A video player you control with your mouse movements!</small></h1>
+            </div>
+            <div align="left">
+                <h3>Need help with GestureVid?</h3>
+                <p>Thank you for choosing GestureVid! Whether it's your first time using GestureVid, or you just need to refresh your memory, this page will help you learn the basics of using this unique, gesture-controlled video player.</p>
+                <br>
+                <div class="accordion" id="accordion2">
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                                <h4 class="heading">Basic Controls</h4>
+                            </a>
+                        </div>
+                    <div id="collapseOne" class="accordion-body collapse">
+                        <div class="accordion-inner">
+                            <h5>Playing and pausing the video</h5>
+                            <p>If the video is paused, use your mouse to draw the letter "P" (using only one stroke) anywhere in the browser window, and the video will start playing! If the video is already playing, you can pause it by drawing another "P".</p>
+                            <img src="img/play_pause.jpg" />
+                            <h5>Volume controls</h5>
+                            <p>To increase the volume of the video, use your mouse to draw an upward "^" arrow shape. To decrease the volume, draw a downward arrow or "v" shape.</p>
+                            <img src="img/volume.jpg" />
+                            <p>To mute the video, use your mouse to draw a letter "M". If the video is already muted, draw another "M" to unmute it.</p>
+                            <img src="img/mute.jpg" />
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                            <h4 class="heading">Advanced controls</h4>
+                        </a>
+                    </div>
+                     <div id="collapseTwo" class="accordion-body collapse">
+                        <div class="accordion-inner">
+                            <h5>Skipping forward or backward</h5>
+                            <p>To skip forward in the video, use your mouse to draw an arrow pointing toward the right. This will skip you forward by 5 seconds. To skip backward, use your mouse to draw an arrow pointing to the left. This will skip you backward by 5 seconds.</p>
+                            <img src="img/skip.jpg" />
+                            <h5>Changing playback speed</h5>
+                            <p>To make the video play at a faster speed, use your mouse to draw a curlicue from left to right. To slow down the video, draw a curlicue from right to left.</p>
+                            <img src="img/playbackrate.jpg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
